@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start no Futuro - CEEMTI BG</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>🚀 Start no Futuro</h1>
+
+    <div id="login-section">
+      <h2>Digite seu nome para começar</h2>
+      <input type="text" id="student-name" placeholder="Seu nome completo">
+      <button id="start-btn">Começar</button>
+    </div>
+
+    <div id="category-container" style="display:none;">
+      <h2>Olá, <span id="display-name"></span>! Escolha o curso para jogar:</h2>
+      <button class="category-btn azul" data-category="informatica">💻 Informática</button>
+      <button class="category-btn verde" data-category="msi">⚙️ MSI</button>
+      <button class="category-btn roxo" data-category="clinicas">🧪 Análises Clínicas</button>
+      <button class="category-btn vermelho" data-category="geral">🌎 EMASP</button>
+      <div id="scores"></div>
+    </div>
+
+    <div id="quiz-section" style="display:none;">
+      <h2 id="quiz-title"></h2>
+      <p id="student-info"></p>
+      <p id="question"></p>
+      <div id="answers"></div>
+      <p id="feedback"></p>
+      <button id="next-btn">Próxima</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
